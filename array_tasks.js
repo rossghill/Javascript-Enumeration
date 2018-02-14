@@ -31,13 +31,30 @@ const arrayTasks = {
     return result;
 	},
 
-	// findIndexesOf: function (arr, itemToFind) {
-
+	findIndexesOf: function (arr, itemToFind) {
+    const result = arr.filter(function(value){
+      return arr.indexOf(itemToFind);
+    })
+    return result;
+  },
+    // foundArray = [];
+    // arr.forEach(function(number){
+    //   if (number === itemToFind){
+    //     foundArray.push(number.indexOf(number));
+    //   }
+    // })
+    // return foundArray;
 	// },
 
-	// sumOfAllEvenNumbersSquared: function (arr) {
-
-	// }
+	sumOfAllEvenNumbersSquared: function (arr) {
+    const evens = arr.filter(function(number){
+      return number % 2 === 0;
+    })
+    const result = evens.reduce(function(runningTotal, number){
+      return runningTotal += (number * number);
+    }, 0)
+    return result;
+	}
 
 	// ----------- EXTENSION ------------
 
