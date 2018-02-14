@@ -16,9 +16,13 @@ const arrayTasks = {
     return result;
 	},
 
-	// sum: function (arr) {
-
-	// },
+	sum: function (arr) {
+    total = 0;
+    arr.forEach(function(number){
+      total += number;
+    })
+    return total;
+	},
 
 	// removeAndClone: function (arr, valueToRemove) {
 
