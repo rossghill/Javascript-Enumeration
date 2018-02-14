@@ -9,9 +9,12 @@ const arrayTasks = {
     return arr;
 	},
 
-	// square: function (arr) {
-
-	// },
+	square: function (arr) {
+    const result = arr.map(function(number){
+      return number * number;
+    })
+    return result;
+	},
 
 	// sum: function (arr) {
 
