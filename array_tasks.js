@@ -32,19 +32,14 @@ const arrayTasks = {
 	},
 
 	findIndexesOf: function (arr, itemToFind) {
-    const result = arr.filter(function(value){
-      return arr.indexOf(itemToFind);
+    let newArr = [];
+    arr.filter(function(number, index){
+        if (number === itemToFind) {
+             newArr.push(index);
+        }
     })
-    return result;
+    return newArr;
   },
-    // foundArray = [];
-    // arr.forEach(function(number){
-    //   if (number === itemToFind){
-    //     foundArray.push(number.indexOf(number));
-    //   }
-    // })
-    // return foundArray;
-	// },
 
 	sumOfAllEvenNumbersSquared: function (arr) {
     const evens = arr.filter(function(number){
